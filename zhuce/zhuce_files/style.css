@@ -1,0 +1,40 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+html{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	min-width: 750px;
+}
+.login-btn{
+	transform: scale(1);
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.login-btn:hover{
+	transform: scale(.9);
+	background: #000;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.third_login_col{
+	font-size: 12px;
+}
+.content{
+	width: 100%;
+	min-height: 750px;
+	background: #f6f6f6;
+	position: relative;
+}
+.login_form_col{
+	margin-top: 50px;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+}

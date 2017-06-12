@@ -1,0 +1,161 @@
+@charset "utf-8";
+.animate-3d{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+    -moz-transform: rotateY(0deg) rotateX(0deg);
+    -o-transform: rotateY(0deg) rotateX(0deg);
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.transition-z-L {
+    /* -webkit-transform: translateZ(40px); */
+}
+.transition-z-M {
+    /* -webkit-transform: translateZ(20px); */
+}
+.transition-z-S {
+    /*     -webkit-transform: translateZ(10px); */
+}
+
+.animate-common{
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+    -webkit-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    -moz-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    -o-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+}
+
+.animate-timing-function{
+    -webkit-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    -moz-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    -o-transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+    transition-timing-function: cubic-bezier(0.4,.01,.165,.99);
+}
+
+.animate-duration-s{
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.animate-duration-ms{
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.animate-duration-m{
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.animate-duration-l{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.animate-duration-h{
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.animate-delay1{
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.animate-delay2{
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.animate-delay3{
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.animate-delay4{
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.animate-delay5{
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.animate-move-left{
+    -webkit-transform: translate3d(0%,0,0);
+    -moz-transform: translate3d(0%,0,0);
+    -o-transform: translate3d(0%,0,0);
+    transform: translate3d(0%,0,0);
+}
+
+.animate-move-right{
+    -webkit-transform: translate3d(0%,0,0);
+    -moz-transform: translate3d(0%,0,0);
+    -o-transform: translate3d(0%,0,0);
+    transform: translate3d(0%,0,0);
+}
+
+.animate-opacity{
+    opacity: 1;
+}
+
+.animate-opacity-dark{
+    opacity: 0;
+}
+
+.animate-from-left{
+    -webkit-transform: translate3d(-100%,0,0);
+    -moz-transform: translate3d(-100%,0,0);
+    -o-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.animate-from-right{
+    -webkit-transform: translate3d(100%,0,0);
+    -moz-transform: translate3d(100%,0,0);
+    -o-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    visibility: hidden;
+    opacity: 0;
+}

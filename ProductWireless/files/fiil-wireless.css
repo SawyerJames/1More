@@ -1,0 +1,277 @@
+.swipe-item:nth-of-type(4) .swipe-content {
+    max-width: 1200px;
+    margin: 90px auto 0;
+    /*background: url(//source.fiil.com/portal/pc/images/product/fiil-structure.gif) center 60px / contain no-repeat;*/
+}
+
+[data-hidenav] .swipe-item:nth-of-type(4) .swipe-content {
+    margin-top: 0;
+}
+
+.swipe-item .swipe-content .left .prd-desc {
+    width: 495px;
+}
+
+.swipe-item:nth-child(1) .swipe-content .prd-desc {
+    left: 42%;
+    top: 56%;
+    text-align: right;
+}
+
+.swipe-item:nth-child(3) .swipe-content {
+    min-width: 1040px;
+    background: url("../files/img3.png") right 60px / auto 90% no-repeat;
+}
+
+.swipe-item:nth-child(5) .swipe-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.swipe-item:nth-child(5) .swipe-content .left {
+    width: 66%;
+    text-align: left;
+}
+
+.swipe-item:nth-child(5) .swipe-content .left video {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.swipe-item:nth-child(5) .swipe-content .prd-desc {
+    width: 30%;
+}
+
+.swipe-item:nth-child(6) .swipe-content {
+    background: url("../files/img6-2.png") 90% 60px / 40% no-repeat;
+}
+
+.swipe-item:nth-child(6) .swipe-content .right {
+    width: 55%;
+}
+
+.swipe-item:nth-child(7) .swipe-content .prd-desc {
+    padding-right: 130px;
+}
+
+.swipe-item:nth-child(7) .swipe-content {
+    background: url("../files/img7.jpg") right no-repeat;
+    /*background-size: contain;*/
+}
+
+.swipe-item:nth-child(8) .swipe-content {
+    background: url("../files/img8.jpg") no-repeat;
+}
+
+.learn-more-vdo .right{
+    text-align: center;
+}
+
+.swipe-item:nth-child(8) .swipe-content .prd-desc {
+    width: 356px;
+    margin-left: 25%;
+}
+
+.swipe-item:nth-child(9) .swipe-content .prd-desc {
+    padding-right: 30px;
+}
+
+.swipe-item:nth-child(9) .swipe-content .prd-desc .line3 ul li {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.swipe-item:nth-child(9) .swipe-content .prd-desc .line3 ul li img {
+    height: 161px;
+    display: block;
+    opacity: .5;
+    margin: 0 auto;
+}
+
+.swipe-item:nth-child(9) .swipe-content .prd-desc .line3 ul li:hover img {
+    opacity: 1;
+}
+
+.swipe-item:nth-child(9) .swipe-content .prd-desc .line3 ul li span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFCB43;
+}
+
+.swipe-item:nth-child(10) .swipe-content{
+    background: url("../files/fiilPlus.jpg") left center / 50% no-repeat;
+}
+
+.swipe-item:nth-child(10) .swipe-content .prd-desc {
+    width: 426px;
+    margin-left: 20%;
+}
+
+.swipe-item:nth-child(10) .swipe-content video {
+    width: 100%;
+}
+
+.swipe-item:nth-child(11) .swipe-content .top-desc {
+    width: 732px;
+}
+
+.swipe-item:nth-child(11) .img-cover .full-img {
+    background: url("../files/img11.png");
+    background-size: cover;
+}
+
+.swipe-item:nth-child(1) .swipe-content .line1 {
+    font-size: 60px;
+}
+
+.swipe-item:nth-child(11) .swipe-content .line1 {
+    color: #4A4A4A;
+}
+
+.swipe-item:nth-child(1) .swipe-content .line2 {
+    color: #fdbfbf;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.swipe-item:nth-child(11) .swipe-content .line2 {
+    color: #858585;
+}
+
+.swipe-item:nth-child(1) .swipe-content .line3{
+    margin-top: 20px;
+}
+
+.swipe-item:nth-child(2) .swipe-content .line3 a{
+    font-size: 14px;
+    color: #494949;
+    width: 164px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #adadad;
+}
+
+.swipe-item:nth-child(4) .swipe-content .line3 {
+    margin: 26px auto 0;
+}
+
+.swipe-item .swipe-content video {
+    height: 100%;
+    max-height: 900px;
+}
+
+.swipe-item:nth-child(1) .swipe-content video {
+    margin-left: 15%;
+}
+
+.swipe-item:nth-child(2) .swipe-content .video-wrap {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    visibility: hidden;
+    height: 100%;
+    max-height: 900px;
+}
+
+.swipe-item:nth-child(2) .swipe-content .video-wrap.show {
+    visibility: visible;
+}
+
+.swipe-item:nth-child(2) .swipe-content .controller {
+    position: absolute;
+    width: 24%;
+    right: 0;
+    height: 0;
+    padding-top: 24%;
+    max-height: 900px;
+}
+
+.swipe-item:nth-child(2) .swipe-content .controller.left {
+    bottom: 14%;
+    left: 39%;
+}
+
+.swipe-item:nth-child(2) .swipe-content .controller.left.active {
+    bottom: 37%;
+    left: 46%;
+}
+
+.swipe-item:nth-child(2) .swipe-content .controller.right {
+    bottom: 4%;
+    right: 17%;
+    width: 20%;
+}
+
+.swipe-item:nth-child(2) .swipe-content .controller.right.active {
+    bottom: 7%;
+    right: 10%;
+}
+
+.swipe-item:nth-child(2) .swipe-content .video-wrap video {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.swipe-item:nth-child(2) .swipe-content video.cur {
+    visibility: visible;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px #F83D3D solid;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer.show {
+    opacity: 1;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 6px auto;
+    display: block;
+    border: 1px #F83D3D solid;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer.left {
+    top: 34%;
+    left: 41%;
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -ms-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer.top {
+    top: 22%;
+    right: 33%;
+    -webkit-transition-delay: .8s;
+    -moz-transition-delay: .8s;
+    -ms-transition-delay: .8s;
+    -o-transition-delay: .8s;
+    transition-delay: .8s;
+}
+
+.swipe-item:nth-child(2) .swipe-content .pointer.right {
+    bottom: 48%;
+    right: 25%;
+    -webkit-transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -ms-transition-delay: 1.2s;
+    -o-transition-delay: 1.2s;
+    transition-delay: 1.2s;
+}

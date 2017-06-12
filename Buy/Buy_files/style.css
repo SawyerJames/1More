@@ -1,0 +1,37 @@
+.proInfo-img-col{
+    margin: 5% 5% 0 8%;
+    width: auto;
+    height: auto;
+}
+.proInfo-desc-col{
+    margin-top: 5%;
+    height: auto;
+}
+.proInfo-item-col a .btn-fiil{
+    margin-left: 10%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.pay{
+    outline: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;  
+}
+.pay:hover{
+    outline: none;
+    transform: scale(1.1);
+    background: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.proInfo-item-col a .btn-fiil:hover{
+    outline: none;
+    transform: scale(1.1);
+    background: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}

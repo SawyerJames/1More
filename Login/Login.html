@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://passport.fiil.com/pc/login.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://passport.fiil.com:80/">--><base href=".">
+
+<title>1more耳机授权平台</title>
+<link href="./Login_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/base.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/flavr.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/animate.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/common.css" rel="stylesheet" type="text/css">
+<link href="./Login_files/style.css" rel="stylesheet" type="text/css">
+<script src="./Login_files/hm.js"></script><script>
+	var basePath = "http://passport.fiil.com:80/";
+</script>
+<script src="./Login_files/jquery-2.1.4.min.js"></script>
+<script src="./Login_files/bootstrap.min.js"></script>
+<script src="./Login_files/inputUtil.js"></script>
+<script src="./Login_files/flavr.js"></script>
+<script src="./Login_files/flavr-animate.js"></script>
+<script src="./Login_files/alertCall.js"></script>
+<script src="./Login_files/md5.js"></script>
+<script src="./Login_files/login.js"></script>
+<script src="./Login_files/validateForm.js"></script>
+</head>
+
+<body style="height: 775px;">
+        <div style="font-size:20px;padding:20px;color:">
+            <dd><a data-nav="index" href="../Shouye/FIIL.html" class="active" ></a></dd>
+        </div>
+    <div class="content">
+        <div class="show_img">
+        	<div class="logo" style="margin-top: 308.8px;"><a href="../Shouye/FIIL.html"><img src="img/logo.png"></a></div>
+        </div>
+        <div class="login_form_col" style="top: 386px;">
+        	<div class="login_bar">
+                <div class="login_bar_item">
+                    <ul class="nav nav-tabs">
+                        <li class="">
+                            <a data-toggle="tab" href="#" onfocus="this.blur();" aria-expanded="false"><span class="bar_txt right_border">快速登录</span></a>
+                        </li>
+                        <li class="active">
+                            <a data-toggle="tab" href="#" onfocus="this.blur();" aria-expanded="true"><span class="bar_txt">帐号登录</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login_bar_item">
+                    <a class="login_bar_url" href="../zhuce/zhuce.html">注册</a>
+                </div>
+            </div>
+            <div class="login_content">
+                <div class="tab-content">
+                    <div class="tab-pane" id="quick">
+                    	<div class="login_item">
+                        	<div class="input_col_name">
+                            	手机号
+                            </div>
+                            <div class="input_col">
+                            	<input class="quick_mobile" maxlength="11" placeholder="请输入手机号">
+                                <div class="error_box error_box_mobile_quick">
+                                    <span class="error_title error_title_mobile">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_mobile"></div>
+                        </div>
+                        <div class="login_item">
+                        	<div class="input_col_name">
+                            	图形验证码
+                            </div>
+                            <div class="input_col picture-verif">
+                            	<input class="verif_code_1" maxlength="6" id="validatecode" placeholder="请输入验证码">
+                                <div class="error_box error_box_validatecode">
+                                    <span class="error_title error_title_validatecode">---</span>
+                                </div>
+                            </div>
+                            <img  id="validateCode" alt="验证码" src="./Login_files/code.jsp">
+                            <div class="changeBtn">
+                                <span>换一张</span>
+                            </div>
+                            <div class="state state_validatecode"></div>
+                        </div>
+                        <div class="login_item">
+                        	<div class="input_col_name">
+                            	验证码
+                            </div>
+                            <div class="input_col">
+                            	<input class="verif_code" maxlength="4" id="checkcode" placeholder="请输入验证码">
+                                <div class="error_box error_box_verif">
+                                    <span class="error_title error_title_verif">---</span>
+                                </div>
+                                <div class="verif_code_btn">
+                                    <span class="verif_code_text">获取验证码</span>
+                                </div>
+                            </div>
+                            <div class="state state_password"></div>
+                        </div>
+                        <div class="login_item login-item-short">
+                        </div>
+                        <div class="login_item">
+                        	<div class="third_login_title">第三方登录</div>
+                            <div class="third_login_col">
+                            	<a class="third_login_icon icon_weixin" href="http://passport.fiil.com/wxAuth.fiil?type=2"></a>
+                                <a class="third_login_icon icon_weibo" href="http://passport.fiil.com/wbAuth.fiil"></a>
+                                <a class="third_login_icon icon_qq" href="http://passport.fiil.com/qqAuth.fiil"></a>
+                            </div>
+                            <div class="login-btn-col">
+                            	<div class="login-btn login_btn_quick">登录</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="normal">
+                    	<div class="login_item">
+                        	<div class="input_col_name">
+                            	手机号
+                            </div>
+                            <div class="input_col">
+                            	<input class="normal_mobile" maxlength="11" placeholder="请输入手机号">
+                                <div class="error_box error_box_mobile_normal">
+                                    <span class="error_title error_title_mobile">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_mobile"></div>
+                        </div>
+                        <div class="login_item">
+                        	<div class="input_col_name">
+                            	密码
+                            </div>
+                            <div class="input_col">
+                            	<input class="password" type="password" placeholder="请输入密码">
+                                <div class="error_box error_box_password">
+                                    <span class="error_title error_title_password">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_password"></div>
+                        </div>
+                        <div class="login_item login-item-short">
+                            <a class="forget" href="http://passport.fiil.com/pc/reset-password.jsp">忘记密码？</a>
+                        </div>
+                        <div class="login_item">
+                        	<div class="third_login_title">第三方登录</div>
+                            <div class="third_login_col">
+                            	<a class="third_login_icon icon_weixin" href="http://passport.fiil.com/wxAuth.fiil?type=2"></a>
+                                <a class="third_login_icon icon_weibo" href="http://passport.fiil.com/wbAuth.fiil"></a>
+                                <a class="third_login_icon icon_qq" href="http://passport.fiil.com/qqAuth.fiil"></a>
+                            </div>
+                            <div class="login-btn-col">
+                            	<div class="login-btn login_btn_normal">登录</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert_window">
+    	<div class="jian"></div>
+        <div class="alert_window_content"></div>
+    </div>
+    <footer style="margin-top: 680px;">
+    
+        <span class="copyright"></span>
+    </footer>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?158fda3b98b6184e70d1b35007b35f07";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body></html>

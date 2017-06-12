@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.fiil.com/cn/fiil-wireless.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="FIIL由音乐人汪峰创立，拥有全球顶尖技术团队，完善的网络服务和售后体系。具备青年潮流文化属性。FIIL拥有FIIL系列、FIIL Diva系列、Carat系列、Bestie系列。">
+<meta name="keywords" content="">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="http://source-img.fiil.com/">
+<link rel="dns-prefetch" href="http://source.fiil.com/">
+<link rel="dns-prefetch" href="http://fiil.com/">
+<link rel="dns-prefetch" href="http://www.fiil.com/">
+
+
+<script src="files/hm.js"></script><script>
+	function trimStr(str){
+		return str.replace(/(^\s*)|(\s*$)/g,"");
+	}
+
+	function lanSkip(){
+		var url = window.location.href;
+		if(url.indexOf("/cn/") > -1){
+			setCookie("lang","zh",30);
+		}
+		else if(url.indexOf("/en/") > -1){
+			setCookie("lang","en",30);
+		}
+	}
+
+	function setCookie(name,value,exp){
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()+exp);
+		document.cookie = name + "=" + escape(value)  + ((exp == null||exp == "")? ";" : ";expires=" + expDate.toUTCString()) + ";path=/";
+	}
+
+	function getCookie(name){
+		var cookieStr = "";
+		cookieStr = document.cookie;
+
+		var nameExsist = true;
+		if(cookieStr.length > 0){
+			var cookieArr = new Array();
+			cookieArr = cookieStr.split(";");
+			for(var i = 0; i<cookieArr.length; i++){
+				var cookieArrItem = new Array();
+				cookieArrItem = cookieArr[i].split("=");
+				if(trimStr(cookieArrItem[0]) == name){
+					return unescape(trimStr(cookieArrItem[1]));
+					break;
+				}
+				else{
+					nameExsist = false;
+				}
+			}
+			if(!nameExsist){
+				return "";
+			}
+		}
+		else{
+			return "";
+		}
+	}
+
+	function delCookie(name) {
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()-1);
+		var cval = getCookie("lang");
+		if(cval != null){
+			document.cookie = name + "=" + escape(cval) + ";expires=" + expDate.toUTCString() + ";path=/";
+		}
+	}
+	
+	(function(){
+		lanSkip();
+	})();
+</script>
+
+    <title>1MORE wireless 介绍页</title>
+    <link href="files/animate.css" rel="stylesheet" type="text/css">
+    <link href="files/base.css" rel="stylesheet" type="text/css">
+    <link href="files/product.css" rel="stylesheet" type="text/css">
+    <link href="files/fiil-wireless.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="files/swiper.min.css">
+    <script type="text/javascript" src="files/swiper.min.js"></script>
+    <script type="text/javascript" src="files/jquery.js"></script>
+    <script type="text/javascript" src="files/fiil.js"></script>
+    <script src="files/sub.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<script type="text/javascript">
+    var __isEn = location.href.indexOf('/en') > -1;
+    $(document).ready(function () {
+        var url = location.href;
+        $('[data-lan="' + (__isEn ? "en" : "cn") + '"]').addClass('active');
+        $('[data-lan]').on('click', function () {
+            var lan = $(this).attr('data-lan');
+            if (lan === 'en' && !__isEn) {
+                setCookie("lang","en",30);
+				var lan_url = location.href;
+				lan_url = lan_url.replace("/cn/","/en/");
+                window.location.href = lan_url;
+//                alert(getCookie("lang"));
+            } else if (lan === 'cn' && __isEn) {
+                setCookie("lang","zh",30);
+                var lan_url = location.href;
+				lan_url = lan_url.replace("/en/","/cn/");
+                window.location.href = lan_url;
+            }
+        })
+    });
+</script>
+<nav class="j-nav-bar">
+    <div class="nav-back animated7 no-shadow"></div>
+    <dl>
+        <dd><a href="#"><i class="logo"><img src="../picture/fiil-logo-black.png" style="margin-top:15px;"></i></a></dd>
+        <dd><a data-nav="index" href="../Shouye/FIIL.html" class="active">首页</a></dd>
+        <dd class="hover-sub-pro"><a data-nav="product" class="active">产品</a>
+            <div class="fiil-head-sub-col" data-sub="sub-pro" style="display: none;">
+                <div class="">
+                    <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductWireless/fiil系列.html">
+                            <div class="sub-img sub-img-pro1"><img src="../picture/sub-pro-fiil.png"></div>
+                            <div class="sub-title">wireless</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductJiao/FIIL_Bestie.html">
+                            <div class="sub-img sub-img-pro2"><img src="../picture/sub-pro-bestie.png"></div>
+                            <div class="sub-title">胶囊耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                         <a class="sub-url" href="../ProductQuan/FIIL_Diva.html">
+                            <div class="sub-img  sub-img-pro3"><img src="../picture/sub-pro-diva.png"></div>
+                            <div class="sub-title">圈铁耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductThree/index.html">
+                            <div class="sub-img  sub-img-pro4"><img src="../picture/sub-pro-carat.png"></div>
+                            <div class="sub-title">三单元</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductShan/FIIL_Vox.html">
+                            <div class="sub-img  sub-img-pro5"><img src="../picture/sub-pro-vox.png"></div>
+                            <div class="sub-title">山灵X1MORE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </dd>
+        <dd><a href="../PPXX/index.html" target="_blank">品牌信息</a></dd>
+        <!--<dd><a data-nav="diva" href="diva.php">FIIL_Diva</a></dd>-->
+        <!--<dd><a data-nav="bestie" href="fiil-bestie.php">FIIL_Bestie</a></dd>-->
+        <dd class="nav-service hover-sub-ser"><a data-nav="service">服务</a>
+            <div class="fiil-head-sub-col" data-sub="sub-ser">
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../1moreDownload/fillDownload.html">
+                        <div class="sub-img1 sub-img-ser1">
+                            <img src="../picture/sub-service-fiilplus.png">
+                        </div>
+                        <div class="sub-title">下载1more+</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../xianxiadian/xianxiadian.html">
+                        <div class="sub-img1 sub-img-ser2"><img src="../picture/sub-service-offiline.png"></div>
+                        <div class="sub-title">线下门店</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Regist/Regist.html">
+                        <div class="sub-img1  sub-img-ser3"><img src="../picture/sub-service-guarantee.png"></div>
+                        <div class="sub-title">产品注册</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Authentication/Authentication.html">
+                        <div class="sub-img1  sub-img-ser4"><img src="../picture/sub-service-validate.png"></div>
+                        <div class="sub-title">正品验证</div>
+                    </a>
+                </div>
+            </div>
+        </dd>
+        
+        <dd><a href="../AboutUs/AboutUs.html" target="_blank">和我联系</a></dd>
+        <dd class="language"><span><a data-lan="cn" class="active" href="../Login/Login.html">登录</a> <i>|</i> <a data-lan="en" href="zhuce/zhuce.html"> 注册 </a></span></dd>
+    </dl>
+</nav>
+<div class="content-wrap">
+    <div class="product-nav">
+        <div class="top-nav">
+            <div>
+                <p><img src="files/icon-fiil-wireless.png">Wireless</p>
+                <span data-index="0" class="text cur">外观</span>
+                <span data-index="0" class="cur"><em></em></span>
+                <span data-index="1"><em></em></span>
+                <span data-index="2" class="text">音质</span>
+                <span data-index="2"><em></em></span>
+                <span data-index="3"><em></em></span>
+                <span data-index="4"><em></em></span>
+                <span data-index="5"><em></em></span>
+                <span data-index="6" class="text">功能</span>
+                <span data-index="6"><em></em></span>
+                <span data-index="7"><em></em></span>
+                <span data-index="8"><em></em></span>
+                <!-- <span data-index="9"><em></em></span> -->
+                <span data-index="9" class="text">服务</span>
+                <a class="top-buy animated4" target="_blank" href="../Buy/Buy.html">立即购买</a>
+            </div>
+        </div>
+        <h5></h5>
+    </div>
+    <div class="wrapper swiper-container swiper-container-vertical">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swipe-item swiper-slide-active">
+                <div class="swipe-content">
+                    <video autoplay="" src="MP4/fiil_product_1-ok.mp4"></video>
+                    <div class="prd-desc show">
+                        <h1 class="line1 animated fadeInRight"><img src="files/wireless.png"></h1>
+                        <p class="line2 animated fadeInRight">动圈 外观惊艳 TDDC声学系统 HIFI主动降噪</p>
+                        <p class="line3 animated fadeInLeft fadeInRight"><span>￥1599</span><span class="red-line align-r"></span></p>
+                        <p class="line4 animated fadeInLeft fadeInRight">wireless有线版  /  舒适佩戴  音质细腻  主动降噪  /  ￥1099</p>
+                    </div>
+                </div>
+            </div>
+  <div class="swiper-slide swipe-item swiper-slide-next">
+                <div class="swipe-content">
+                    <div class="left">
+                        <div class="prd-desc">
+                            <h1 class="line1 animated">精妙工艺，非凡品质</h1>
+                            <p class="line2 animated">航空级铝合金面盖，超凡色泽表现；5N横向夹力，慢回弹记忆海绵，与耳朵的触碰有这恰如其分的柔软</p>
+                            <p class="line3 animated"><a id="playPrdVideo" class="animated4" data-opt="1">折叠耳机</a></p>
+                        </div>
+                    </div>
+                    <div class="video-wrap">
+                        <video data-index="0" class="cur" src="MP4/fiil_product_2-ok.mp4"></video>
+                        <video data-index="1" src="MP4/fiil_product_3-ok.mp4"></video>
+                        <video data-index="2" src="MP4/fiil_product_4-ok.mp4"></video>
+                        <video data-index="3" src="MP4/fiil_product_5-ok.mp4"></video>
+                        <video data-index="4" src="MP4/fiil_product_6-ok.mp4"></video>
+                    </div>
+                </div>
+            </div> -->
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="left">
+                        <div class="prd-desc">
+                            <h1 class="line1 animated">专业的音乐表现能力</h1>
+                            <p class="line2 animated">1 more Wireless无线但音质依然强悍， 采用Apt-X或AAC编解码技术，
+                                接近无损的高码率蓝牙传输媲美无损音质。同时它还采用了Dsp技 术，经过出色的技术优化和调试，使音效增强效果；Stereo 3D
+                                enhancement技术，宽阔的空间感，让你更好地感受立体声场的魅 力。</p>
+                            <img class="line3 animated" src="files/p-3-b.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="top-desc">
+                        <h1 class="line1 animated">音质，从来都不仅是喇叭的事</h1>
+                        <p class="line2 animated">除了耳机芯喇叭单元的运用，耳机电路系统和低音增强管+双阻尼双后腔耳机声学系统等<br>
+                            让音乐的发声更动人，手机直推即可享受动人音质。</p>
+                        <img class="line3 animated" src="files/p-4-b.png">
+                    </div>
+                    <img class="bottom-img" src="files/structure.png">
+                </div>
+            </div>
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+               <div class="left">
+                        <video loop="" src="MP4/fiil_hangdrum_1.mp4"></video>
+                    </div>
+                    <div class="prd-desc right animated">
+                        <h1 class="line1 animated">惊人的细节还原度</h1>
+                        <p class="line2 animated">耳机最好的状态就像歌唱者就在眼前，能感受到歌里的情绪，甚至是歌者面部的抽动。
+                            1more与原声波形图的对比就印证了1more的还原度和声音的现场感，立体的音效立刻让你置身其中。艺术与科技的结合，更好地倾听音乐细节感受音乐情绪。 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="left">
+                        <div class="prd-desc">
+                            <h1 class="line1 animated">世界太纷扰 只是想静静</h1>
+                            <p class="line2 animated">
+                                在市中心的大街上，在拥挤的地铁中或者在午后的餐厅里，若是你想要静静地听音乐，又或是单纯地想要静静，音乐和静静，只要你想，不是不可能。</p>
+                            <img class="line3 animated" src="files/p-6-b.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="left">
+                        <div class="prd-desc">
+                            <h1 class="line1 animated">给你无线自由</h1>
+                            <p class="line2 animated">
+                                将播放源ipad或手机放在自家沙发上，自己戴着耳机在阳台浇花或是书房看书也能尽享音乐。无线，让你从有线的束缚中得到解放，更多的选择才能及时满足你的需求。</p>
+                            <img class="line3 animated" src="files/p-7-b.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="right full-height">
+                        <div class="prd-desc">
+                            <h1 class="line1 animated">无感佩戴 肌肤相贴</h1>
+                            <p class="line2 animated">
+                                wireless与耳部接触的材质选用了柔软丝滑的蛋白丝皮质，让耳朵有躲进天丝、绸缎的感觉，柔软舒适到削弱耳机的佩戴感。站着、躺着、走着、跳着，姿势和时间都不是享受音乐的阻碍。 </p>
+                            <img class="line3 animated" src="files/p-8-b.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide swipe-item">
+                <div class="swipe-content">
+                    <div class="top-desc">
+                        <h1 class="line1 animated">我们非常担心 没有为你提供维修服务的机会</h1>
+                        <p class="line2 animated"> 非人为因素的产品质量问题一年内免费包换</p>
+                    </div>
+                    <img class="bottom-img" src="files/img11.png">
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+<footer>
+    <div class="footer-wrap">
+        <div class="footer-row footer-top">
+            <p class="f-l"><img src="./files/fiil-me-now_white.png"></p>
+
+            <div class="f-r sns-share">
+                <a class="animated7"><img src="../picture/浅色图标2.png"></a>
+                <a class="animated7"><img src="../picture/白色图标1.png"></a>
+                <a class="animated7"><img src="../picture/浅色图标3.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b930a0af17fc24859e92e702b1e3265a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>            </div>
+        </div>
+    </div>
+    <div class="bottom-next" style="display: block;"><img src="files/down.png"></div>
+</div>
+
+
+</body></html>

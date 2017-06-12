@@ -1,0 +1,68 @@
+html{
+	min-width: 200px;
+    height: 100%;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+.float-mobile{
+	top: 10%;
+	left: 15%;
+}
+.desc-item{
+	width: 100% !important;
+}
+.relative{
+	position: relative;
+}
+.float-mobile .mobile-viewer{
+	/* width: auto; */
+	margin-top: 15%;
+}
+footer{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+.footer-wrap{
+	padding: 1% 10% 0;
+	max-width: 100%;
+}
+.clear-fix:after,
+.clear-fix:before {
+    content: " ";
+    display: table;
+}
+
+.clear-fix:after {
+    clear: both;
+}
+
+.clear-fix {
+    zoom: 1;
+}
+video{
+    width: 100% !important;
+}
+.lastBg{
+	width: 100%;
+	text-align: center;
+	margin-top: 14%;
+}
+.lastBg img{
+	width: 20%;
+	margin-bottom: 2%;
+}
+.lastBg h1{
+	font-size: 40px;
+	color: #332C2B;
+}
+.lunbo{
+	width: 100%;
+}
+.app-download{
+	margin-top: 5% !important;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/skip.js"></script>
+    <script>
+    function trimStr(str) {
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+
+    function lanSkip() {
+        var url = window.location.href;
+        if (url.indexOf("/cn/") > -1) {
+            setCookie("lang", "zh", 30);
+        } else if (url.indexOf("/en/") > -1) {
+            setCookie("lang", "en", 30);
+        }
+    }
+
+    function setCookie(name, value, exp) {
+        var expDate = new Date();
+        expDate.setDate(expDate.getDate() + exp);
+        document.cookie = name + "=" + escape(value) + ((exp == null || exp == "") ? ";" : ";expires=" + expDate.toUTCString()) + ";path=/";
+    }
+
+    function getCookie(name) {
+        var cookieStr = "";
+        cookieStr = document.cookie;
+
+        var nameExsist = true;
+        if (cookieStr.length > 0) {
+            var cookieArr = new Array();
+            cookieArr = cookieStr.split(";");
+            for (var i = 0; i < cookieArr.length; i++) {
+                var cookieArrItem = new Array();
+                cookieArrItem = cookieArr[i].split("=");
+                if (trimStr(cookieArrItem[0]) == name) {
+                    return unescape(trimStr(cookieArrItem[1]));
+                    break;
+                } else {
+                    nameExsist = false;
+                }
+            }
+            if (!nameExsist) {
+                return "";
+            }
+        } else {
+            return "";
+        }
+    }
+
+    function delCookie(name) {
+        var expDate = new Date();
+        expDate.setDate(expDate.getDate() - 1);
+        var cval = getCookie("lang");
+        if (cval != null) {
+            document.cookie = name + "=" + escape(cval) + ";expires=" + expDate.toUTCString() + ";path=/";
+        }
+    }
+
+    (function() {
+        lanSkip();
+    })();
+    </script>
+    <title>1 MORE 官网首页</title>
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/sub.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/pageInfo.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+</head>
+
+<body>
+    <script type="text/javascript">
+    var __isEn = location.href.indexOf('/en') > -1;
+    $(document).ready(function() {
+        var url = location.href;
+        $('[data-lan="' + (__isEn ? "en" : "cn") + '"]').addClass('active');
+        $('[data-lan]').on('click', function() {
+            var lan = $(this).attr('data-lan');
+            if (lan === 'en' && !__isEn) {
+                setCookie("lang", "en", 30);
+                var lan_url = location.href;
+                lan_url = lan_url.replace("/cn/", "/en/");
+                window.location.href = lan_url;
+                //                alert(getCookie("lang"));
+            } else if (lan === 'cn' && __isEn) {
+                setCookie("lang", "zh", 30);
+                var lan_url = location.href;
+                lan_url = lan_url.replace("/en/", "/cn/");
+                window.location.href = lan_url;
+            }
+        })
+    });
+    </script>
+    <nav class="j-nav-bar home-nav">
+        <div class="nav-back animated7"></div>
+        <dl>
+            <dd><a href="../Shouye/FIIL.html"><i class="logo">
+            <img src="picture/fiil-logo-black.png" style="margin-top:15px;">
+        </i></a></dd>
+            <dd><a data-nav="index" href="FIIL.html" class="active">首页</a></dd>
+            <dd class="hover-sub-pro"><a data-nav="product">产品</a>
+                <div class="fiil-head-sub-col" data-sub="sub-pro" style="display: none;">
+                    <div class="">
+                        <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductWireless/fiil系列.html" target="_blank">
+                                <div class="sub-img sub-img-pro1"><img src="picture/sub-pro-fiil.png"></div>
+                                <div class="sub-title">wireless</div>
+                            </a>
+                        </div>
+                        <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductJiao/FIIL_Bestie.html" target="_blank">
+                                <div class="sub-img sub-img-pro2"><img src="picture/sub-pro-bestie.png"></div>
+                                <div class="sub-title">胶囊耳机</div>
+                            </a>
+                        </div>
+                        <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductQuan/FIIL_Diva.html" target="_blank">
+                                <div class="sub-img  sub-img-pro3"><img src="picture/sub-pro-diva.png"></div>
+                                <div class="sub-title">圈铁耳机</div>
+                            </a>
+                        </div>
+                        <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductThree/index.html" target="_blank">
+                                <div class="sub-img  sub-img-pro4"><img src="picture/sub-pro-carat.png"></div>
+                                <div class="sub-title">三单元</div>
+                            </a>
+                        </div>
+                        <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductShan/FIIL_Vox.html" target="_blank">
+                                <div class="sub-img  sub-img-pro5"><img src="picture/sub-pro-vox.png"></div>
+                                <div class="sub-title">山灵X1MORE</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+            <dd><a href="../PPXX/index.html" target="_blank">品牌信息</a></dd>
+            <!--<dd><a data-nav="diva" href="diva.php">FIIL_Diva</a></dd>-->
+            <!--<dd><a data-nav="bestie" href="fiil-bestie.php">FIIL_Bestie</a></dd>-->
+            <dd class="nav-service hover-sub-ser"><a data-nav="service">服务</a>
+                <div class="fiil-head-sub-col" data-sub="sub-ser">
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../1moreDownload/fillDownload.html" target="_blank">
+                            <div class="sub-img1 sub-img-ser1">
+                                <img src="picture/sub-service-fiilplus.png">
+                            </div>
+                            <div class="sub-title">下载1more+</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../xianxiadian/xianxiadian.html" target="_blank">
+                            <div class="sub-img1 sub-img-ser2"><img src="picture/sub-service-offiline.png"></div>
+                            <div class="sub-title">线下门店</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../Regist/Regist.html" target="_blank">
+                            <div class="sub-img1  sub-img-ser3"><img src="picture/sub-service-guarantee.png"></div>
+                            <div class="sub-title">产品注册</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../Authentication/Authentication.html" target="_blank">
+                            <div class="sub-img1  sub-img-ser4"><img src="picture/sub-service-validate.png"></div>
+                            <div class="sub-title">正品验证</div>
+                        </a>
+                    </div>
+                </div>
+            </dd>
+            <dd>
+                <a href="../AboutUs/AboutUs.html" target="_blank">和我联系</a></dd>
+            <dd class="language"><span><a data-lan="cn" class="active" href="../Login/Login.html">登录</a> <i>|</i> <a data-lan="en" href="../zhuce/zhuce.html"> 注册 </a></span></dd>
+        </dl>
+    </nav>
+    <!-- 这里是轮播 -->
+    <div class="slider" id="slider">
+      <div class="slider-inner">
+        <div class="item">
+          <a href="../ProductShan/FIIL_Vox.html"><img class="img" src="images/1.jpg"></a>
+        </div>
+        <div class="item">
+          <a href="../ProductQuan/FIIL_Diva.html"><img class="img" src="images/2.jpg"></a>
+        </div>
+        <div class="item">
+          <a href="../ProductJiao/FIIL_Bestie.html"><img class="img" src="images/3.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrap">
+        <div class="story-grid wrapper">
+            <div class="top clear-fix">
+                <div class="grid-item left">
+                    <div class="fade-item" style="display: none;">
+                        <p class="top-desc"> 1MORE耳机智能声学</p>
+                        <div class="item-wrap">
+                            <a target="_blank" href="../ProductQuan/FIIL_Diva.html">
+                                <i>圈铁耳机</i>
+                                <div class="img-wrap">
+                                    <div class="mask animated7"></div>
+                                    <div class="line animated7"></div>
+                                    <div class="img-desc animated4">
+                                        <h1>1  MORE</h1>
+                                        <p>人体工学 外观设计</p>
+                                    </div>
+                                    <img src="picture/brand_img2.jpg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item right">
+                    <div class="img-wrap">
+                        <a target="_blank" href="../ProductWireless/fiil系列.html">
+                            <div class="mask animated7"></div>
+                            <div class="line animated7"></div>
+                            <div class="img-desc-logo animated7">
+                                <div></div>
+                            </div>
+                            <div class="img-desc animated4">
+                                <h1>1 MORE Wireless</h1>
+                                <p>蓝牙耳机，高端音质，HIFI伴侣，开启自由之旅</p>
+                            </div>
+                            <img src="picture/brand_img1.png">
+                        </a>
+                    </div>
+                    <i>1MOREWireless</i>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="item-wrap grid-item fade-item" style="display: none;">
+                    <div class="img-wrap">
+                        <a target="_blank" href="../ProductThree/index.html">
+                            <div class="mask animated7"></div>
+                            <div class="line animated7"></div>
+                            <div class="img-desc-logo animated7">
+                                <div></div>
+                            </div>
+                            <div class="img-desc animated4">
+                                <h1>三单元头戴式耳机</h1>
+                                <p>实验室黑科技，爆发音乐新能量。</p>
+                            </div>
+                            <img src="picture/brand_img3.jpg">
+                        </a>
+                    </div>
+                    <i>头戴式耳机</i>
+                </div>
+            </div>
+            <div class="bottom clear-/fix">
+                <div class="grid-item fade-item left" style="display: none;">
+                    <div class="img-wrap">
+                        <a target="_blank" href="../zixun/zixun.html">
+                            <div class="mask animated7"></div>
+                            <div class="line animated7"></div>
+                            <div class="img-desc-logo animated7">
+                                <div></div>
+                            </div>
+                            <div class="img-desc animated4">
+                                <h1>1 MORE 资讯</h1>
+                                <p>这里有1 MORE _friends！</p>
+                                <p>视频、图片</p>
+                                <p>1 MORE资讯等你来看哦！</p>
+                            </div>
+                            <img src="picture/brand_img4.jpg">
+                        </a>
+                    </div>
+                    <i>1 MORE 资讯</i>
+                </div>
+                <div class="grid-item right">
+                    <img src="picture/fiil-me-now_black.png">
+                    <div class="video-wrap">
+                        <video id="fiil-player" src="mp4/new_diva_04.mp4"></video>
+                        <p class="player-controller" style="display: none;">
+                            <!--                         <em class="iconfont play" style="display: inline;"></em>
+                        <em class="iconfont pause" style="display: none;"></em> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-row footer-top">
+                <p class="f-l"><img src="picture/fiil-me-now_white.png"></p>
+                <div class="f-r sns-share">
+                    <a class="animated7"> <img src="picture/浅色图标2.png"></a>
+                    <a class="animated7"> <img src="picture/白色图标1.png"></a>
+                    <a class="animated7"> <img src="picture/浅色图标3.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/effect.js" type="text/javascript"></script>
+</body>
+
+</html>

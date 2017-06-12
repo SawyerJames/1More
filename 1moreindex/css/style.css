@@ -1,0 +1,23 @@
+/* 最基础的reset */
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	/* 禁止出现滚动条 */
+	overflow: hidden;
+}
+div{
+	width: 100%;
+	height: 100%;
+}
+div video{
+	width: 100%;
+	height: 100%;
+}
+div a:hover{
+	cursor: pointer;
+}

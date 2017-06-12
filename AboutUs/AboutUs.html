@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.fiil.com/cn/carat.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        .container{
+            width: 580px;
+            height: 325px;
+            position: relative;
+        }
+        .container:hover:before{
+            transition: left 2s;/*过渡,改变闪光的位置*/
+            left: 770px;
+        }
+        .container:before{/*在图片之前插入闪光*/
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 325px;
+            top: 0;
+            left: -190px;
+            overflow: hidden;
+            background-image: linear-gradient(to right,rgba(255,255,255,.2) 0,rgba(255,255,255,.5) 50%,rgba(255,255,255,.2) 100%);/*linear-gradient渐变效果*/
+            transform: skewX(-25deg);/*沿x轴倾斜*/
+        }
+    </style>
+
+
+<script src="AboutUs/hm.js"></script><script>
+	function trimStr(str){
+		return str.replace(/(^\s*)|(\s*$)/g,"");
+	}
+
+	function lanSkip(){
+		var url = window.location.href;
+		if(url.indexOf("/cn/") > -1){
+			setCookie("lang","zh",30);
+		}
+		else if(url.indexOf("/en/") > -1){
+			setCookie("lang","en",30);
+		}
+	}
+
+	function setCookie(name,value,exp){
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()+exp);
+		document.cookie = name + "=" + escape(value)  + ((exp == null||exp == "")? ";" : ";expires=" + expDate.toUTCString()) + ";path=/";
+	}
+
+	function getCookie(name){
+		var cookieStr = "";
+		cookieStr = document.cookie;
+
+		var nameExsist = true;
+		if(cookieStr.length > 0){
+			var cookieArr = new Array();
+			cookieArr = cookieStr.split(";");
+			for(var i = 0; i<cookieArr.length; i++){
+				var cookieArrItem = new Array();
+				cookieArrItem = cookieArr[i].split("=");
+				if(trimStr(cookieArrItem[0]) == name){
+					return unescape(trimStr(cookieArrItem[1]));
+					break;
+				}
+				else{
+					nameExsist = false;
+				}
+			}
+			if(!nameExsist){
+				return "";
+			}
+		}
+		else{
+			return "";
+		}
+	}
+
+	function delCookie(name) {
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()-1);
+		var cval = getCookie("lang");
+		if(cval != null){
+			document.cookie = name + "=" + escape(cval) + ";expires=" + expDate.toUTCString() + ";path=/";
+		}
+	}
+	
+	(function(){
+		lanSkip();
+	})();
+</script>
+
+    <title>1MORE 和我联系
+    </title>
+    <link href="AboutUs/animate.css" rel="stylesheet" type="text/css">
+    <link href="AboutUs/base.css" rel="stylesheet" type="text/css">
+    <link href="AboutUs/product.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="AboutUs/jquery.js"></script>
+    <script src="AboutUs/pro.nav.active.js"></script>
+    <script src="AboutUs/sub.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <style type="text/css">
+        .content-wrap {height: initial;}
+        .content-wrap .wrapper { padding-top: 140px; }
+        .content-wrap .wrapper img { width: 100%; display: block; }
+        .wrapper{
+        	height: 700px;
+          	background-image: url('AboutUs/about.jpg');
+        }
+        #input{
+        	
+        }
+        #button{
+
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    var __isEn = location.href.indexOf('/en') > -1;
+    $(document).ready(function () {
+        var url = location.href;
+        $('[data-lan="' + (__isEn ? "en" : "cn") + '"]').addClass('active');
+        $('[data-lan]').on('click', function () {
+            var lan = $(this).attr('data-lan');
+            if (lan === 'en' && !__isEn) {
+                setCookie("lang","en",30);
+				var lan_url = location.href;
+				lan_url = lan_url.replace("/cn/","/en/");
+                window.location.href = lan_url;
+//                alert(getCookie("lang"));
+            } else if (lan === 'cn' && __isEn) {
+                setCookie("lang","zh",30);
+                var lan_url = location.href;
+				lan_url = lan_url.replace("/en/","/cn/");
+                window.location.href = lan_url;
+            }
+        })
+    });
+</script>
+<nav class="j-nav-bar">
+    <div class="nav-back animated7 no-shadow"></div>
+    <dl>
+        <dd><a href="#"><i class="logo"><img src="../picture/fiil-logo-black.png" style="margin-top:15px;"></i></a></dd>
+                <dd><a data-nav="index" href="../Shouye/FIIL.html" class="active">首页</a></dd>
+        <dd class="hover-sub-pro"><a data-nav="product" class="active">产品</a>
+            <div class="fiil-head-sub-col" data-sub="sub-pro" style="display: none;">
+                <div class="">
+                    <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductWireless/fiil系列.html" target="_blank">
+                            <div class="sub-img sub-img-pro1"><img src="../picture/sub-pro-fiil.png"></div>
+                            <div class="sub-title">wireless</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductJiao/FIIL_Bestie.html" target="_blank">
+                            <div class="sub-img sub-img-pro2"><img src="../picture/sub-pro-bestie.png"></div>
+                            <div class="sub-title">胶囊耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                         <a class="sub-url" href="../ProductQuan/FIIL_Diva.html" target="_blank">
+                            <div class="sub-img  sub-img-pro3"><img src="../picture/sub-pro-diva.png"></div>
+                            <div class="sub-title">圈铁耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductThree/index.html" target="_blank">
+                            <div class="sub-img  sub-img-pro4"><img src="../picture/sub-pro-carat.png"></div>
+                            <div class="sub-title">三单元</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../PROductShan/FIIL_Vox.html" target="_blank">
+                            <div class="sub-img  sub-img-pro5"><img src="../picture/sub-pro-vox.png"></div>
+                            <div class="sub-title">山灵X1MORE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </dd>
+          <dd><a href="../PPXX/index.html/" target="_blank">品牌信息</a></dd>
+        <!--<dd><a data-nav="diva" href="diva.php">FIIL_Diva</a></dd>-->
+        <!--<dd><a data-nav="bestie" href="fiil-bestie.php">FIIL_Bestie</a></dd>-->
+        <dd class="nav-service hover-sub-ser"><a data-nav="service">服务</a>
+            <div class="fiil-head-sub-col" data-sub="sub-ser">
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../1moreDownload/fillDownload.html" target="_blank">
+                        <div class="sub-img1 sub-img-ser1">
+                            <img src="../picture/sub-service-fiilplus.png">
+                        </div>
+                        <div class="sub-title">下载1more+</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../xianxiadian/xianxiadian.html" target="_blank">
+                        <div class="sub-img1 sub-img-ser2"><img src="../picture/sub-service-offiline.png"></div>
+                        <div class="sub-title">线下门店</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Regist/Regist.html" target="_blank">
+                        <div class="sub-img1  sub-img-ser3"><img src="../picture/sub-service-guarantee.png"></div>
+                        <div class="sub-title">产品注册</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Authentication/Authentication.html" target="_blank">
+                        <div class="sub-img1  sub-img-ser4"><img src="../picture/sub-service-validate.png"></div>
+                        <div class="sub-title">正品验证</div>
+                    </a>
+                </div>
+            </div>
+        </dd>
+      
+        <dd><a href="../AboutUs/AboutUs.html" target="_blank">和我联系</a></dd>
+        <dd class="language"><span><a data-lan="cn" class="active" href="../Login/Login.html">登录</a> <i>|</i> <a data-lan="en" href="../zhuce/zhuce.html"> 注册 </a></span></dd>
+    </dl>
+</nav>
+<div class="content-wrap">
+    <div class="wrapper">
+            <div class="container foreground">
+                  <div class="foreground-inner">
+                    <div class="push-left" style="width:500px;height:400px;">
+                      <h1 data-skrollex="" data-sk-group="" class="sk-showing sk-viewport-enter" style="opacity: 1;"></h1>
+                      <h2 style="font-size:44px;color:white;margin-left:180px;margin-top:250px;">人们并没有听到音乐的全部。</h2>
+                      <h2>&nbsp;</h2>
+                      <p style="font-size:18x;color:white;margin-left:180px;line-height:20px;margin-top:55px;">1MORE中文音译为万魔，是万魔声学科技有限公司耳机品牌名称，成立于2013年，是一家专注于声学研发设计与智能软硬件开发 ;1MORE善于倾听用户的声音，将录音室里音乐作品所饱含的能量、情感以及激情，如实传递给世界各地的音乐爱好者，让他们在聆听中重拾内心的感动。1MORE坚持原材原味，以达到高舒适性、自然耐听的音质，发挥工匠精神，打造更好的用户体验。&nbsp;</p>
+                      <p>&nbsp;</p>
+                    </div>
+                 </div>
+    </div>
+</div>
+<div style="background-color:#F5F5F5">
+	<div align="center" style="margin-left: auto;
+margin-right: auto;width:80%;height:400px;background-color:white !important;margin-bottom:100px;">
+	<h2 style="font-size:50px;color:black;margin-top:100px;padding-top:80px;">加入 1  MORE</h2>
+	<form style="margin-top:40px;">
+		<div>时刻关注 1more 的所有最新动态。</div>
+<!--         <div  style="position:relative;margin-top:40px;float: left; ">
+    <input type="" name="" id="input" style="
+            width: 300px;
+            height: 20px;
+    border:1px solid #a1a1a1;
+    margin-left: 300px;
+    padding:10px 40px;
+    background:white;
+    border-radius:25px;
+    -moz-border-radius:25px;
+            
+    ">
+    <button id="button" style="      
+            text-align:center;
+    border:1px solid #a1a1a1;
+    padding:10px 20px; 
+    background:white;
+    border-radius:25px;
+    -moz-border-radius:10px; 
+            
+            ">注册</button>
+
+        </div> -->
+        <div class="list" style="position: relative;
+                    margin:20px auto;
+                    width: 400px;
+                    position: left;
+                    border:1px solid #a1a1a1; 
+                 border-radius:25px;
+        ">
+            <input type="" name="" id="input" style="
+             position: left;
+
+            height: 20px;
+             border:none;
+             outline: 0 none;
+            margin-left: auto;
+            padding:10px 40px;
+            background:white;
+            ">
+           <img src="AboutUs/shuxian.png" style=" position:absolute; height: 44px;">
+            <button id="button" style="      
+            text-align:center;
+            border:none ;
+            padding:10px 20px; 
+            background:white;
+            outline:none;
+            font-size: 1em;
+            ">注册</button>
+            <img id="guang" src="AboutUs/sanjiao .png" alt="" style=" position: absolute; margin-top: 12px; ">
+            <span class="container">
+                 
+            </span>
+           
+        </div>
+
+	</form>
+   </div>
+</div>
+<footer>
+    <div class="footer-wrap">
+        <div class="footer-row footer-top">
+            <p class="f-l"><img src="AboutUs/fiil-me-now_white.png"></p>
+
+            <div class="f-r sns-share">
+                <a class="animated7" "><img src="../picture/浅色图标2.png"></a>
+                <a class="animated7" ><img src="../picture/白色图标1.png"></a>
+                <a class="animated7"><img src="../picture/浅色图标3.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b930a0af17fc24859e92e702b1e3265a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script><script>
+	var scrollBool = true;
+   (function (win) {
+	   	
+        $('.j-nav-bar .nav-back').addClass('no-shadow');
+        $('[data-nav="fiil"]').addClass('active');
+        var footer = $('footer');
+		var wrapper = $('.wrapper');
+        var autoHideNavBar = function () {
+			var winHeight = win.height();
+            var container = $('body');
+            var
+			if(winHeight < 750)
+			{
+				if(container.scrollTop()<=550)
+				{
+					$('.j-nav-bar').removeClass("head_up_hide");
+					$('.product-nav').removeClass("head_up_hide1");
+					wrapper.removeClass("head_up_hide2");
+				}
+				else if(container.scrollTop()>550)
+				{
+					$('.j-nav-bar').addClass("head_up_hide");
+					$('.product-nav').addClass("head_up_hide1");
+					wrapper.addClass("head_up_hide2");
+				}
+			}
+			else
+			{
+				$('.j-nav-bar').removeClass("head_up_hide");
+				$('.product-nav').removeClass("head_up_hide1");
+				wrapper.removeClass("head_up_hide2");
+			}
+        };
+		
+		$(document).ready(function(e) {
+            autoHideNavBar();
+        });
+		
+		$(document).scroll(function(e) {
+			autoHideNavBar();
+		});
+		
+		$(window).resize(function(){
+			autoHideNavBar();
+		});
+    })($(window));
+	
+</script>
+
+</body></html>

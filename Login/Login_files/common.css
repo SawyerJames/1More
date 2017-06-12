@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+#validateCode {
+	width: 92px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+*
+{
+	margin:0;
+	padding:0;
+	font-family:'PingFang SC','Helvetica Neue',Helvetica,'Hiragino Sans GB',STHeitiSC-Light,'Microsoft YaHei',Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html
+{
+	width:auto;
+	height:100%;
+}
+
+body
+{
+	width:100%;
+	height:100%;
+	background:url(../img/bg1.jpg) center 0 no-repeat;
+	min-width:1200px;
+}
+
+.login_form_col
+{
+	width:547px;
+	min-height: 364px;
+	background-color:white;
+	box-shadow:0px 15px 10px -10px #d0cfcf;
+	position:absolute;
+	/*top:50%;*/
+	left:50%;
+	margin-top:-230px;
+}
+
+.login_bar
+{
+	width:100%;
+	height:78px;
+	border-bottom:1px solid #ebebeb;
+	display: table;
+}
+
+.login_bar_item{
+	width: auto;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+.login_bar_title{
+	margin-left: 40px;
+}
+
+.nav,.nav-tabs
+{
+	margin-left: 2%;
+	height: 100%;
+	border: none;
+	background-color: white;
+	width: auto;
+	overflow: hidden;
+}
+
+.fa-angle-right{
+	margin-left: 10px;
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.nav-tabs li
+{
+	border-radius:0;
+	border:none;
+	height:100%;
+	line-height:78px;
+	padding-left:35px;
+	padding-right:35px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #606060;
+	cursor: default;
+	background-color:inherit;
+	border: none;
+	border-bottom-color: transparent;
+}
+.nav-tabs>li>a:hover {
+	border-color:inherit;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	text-decoration: none;
+	background-color:inherit;
+}
+
+.nav-tabs>li>a {
+	margin-right: 0;
+	line-height: auto;
+	border: none;
+	border-radius: none;
+	color: #9a9a9a;
+}
+.nav>li>a {
+	width:165%;
+	height:100%;
+	position: relative;
+	display: block;
+	padding: 0px 0px;
+	overflow:hidden;
+}
+
+.tab-pane
+{
+	padding-top:40px;
+}
+
+.login_item
+{
+	width:100%;
+	height:40px;
+	margin-bottom:24px;
+	display: table;
+}
+
+.login_bar_url{
+	font-size: 14px;
+	color: #8c8c8c;
+	float: right;
+	margin-right: 20px;
+}
+
+.input_col_name
+{
+	width:115px;
+	height:40px;
+	position:relative;
+	float:left;
+	/* text-align:center; */
+	line-height:40px;
+	padding-left: 40px;
+}
+
+.content
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	display:inline-block;
+}
+
+.input_col
+{
+	width: 381px;
+	height:40px;
+	position:relative;
+	float:left;
+	background-color:#f6f6f6;
+	border-radius:5px;
+}
+
+.input_col input
+{
+	width: 96%;
+	margin-left:10px;
+	height:40px;
+	background-color:#f6f6f6;
+	border:none;
+	outline:none;
+	position:absolute;
+	border-radius: 5px;
+}
+
+.verif_code_btn
+{
+	width:106px;
+	height:100%;
+	position:relative;
+	float:right;
+	cursor:pointer;
+}
+
+.verif_code_text
+{
+	width:100%;
+	height:auto;
+	display:block;
+	border-left:1px solid #aaaaaa;
+	text-align:center;
+	margin-top:10px;
+}
+
+.input_col input.verif_code
+{
+	width:226px;
+	height:100%;
+	float:left;
+}
+
+.bar_txt
+{
+	width:auto;
+	height:14px;
+	line-height:14px;
+	display:block;
+	margin-top:32px;
+}
+
+.right_border
+{
+	border-right:1px solid #cacaca;
+}
+
+.third_login_title
+{
+	position:relative;
+	line-height:40px;
+	padding-left: 146px;
+	margin-right:0px;
+	margin-top:20px;
+	display: table-cell;
+	vertical-align: middle;
+	color: #9a9a9a;
+}
+
+.third_login_col
+{
+	position:relative;
+	/* float: right; */
+	/* margin-left: -80px; */
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.third_login_icon
+{
+	width:27px;
+	height:27px;
+	position:relative;
+	float: right;
+	margin-left:8px;
+	margin-right:8px;
+	filter:grayscale(1);
+	-webkit-filter:grayscale(1);
+	-moz-filter:grayscale(1);
+	cursor:pointer;
+}
+
+.third_login_icon:hover,.third_login_icon:active
+{
+	-webkit-filter:grayscale(0);
+	-moz-filter:grayscale(0);
+}
+
+.icon_weixin
+{
+	background:url(../img/weixin-gray.png) center center no-repeat;
+	background-size:contain;
+}
+
+.icon_weibo
+{
+	background:url(../img/weibo-gray.png) center center no-repeat;
+	background-size:contain;
+}
+
+.icon_qq
+{
+	background:url(../img/qq-gray.png) center center no-repeat;
+	background-size:contain;
+}
+
+.icon_weixin:hover,.icon_weixin:active
+{
+	background:url(../img/weixin.png) center center no-repeat;
+	background-size:contain;
+}
+
+.icon_weibo:hover,.icon_weibo:active
+{
+	background:url(../img/weibo.png) center center no-repeat;
+	background-size:contain;
+}
+
+.icon_qq:hover,.icon_qq:active
+{
+	background:url(../img/qq.png) center center no-repeat;
+	background-size:contain;
+}
+
+.login-btn-col{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.login-btn
+{
+	width:104px;
+	height:40px;
+	background-color: #de0a3b;
+	text-align:center;
+	line-height:40px;
+	color:white;
+	float: right;
+	margin-right: 50px;
+	/* margin-top:20px; */
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.logo
+{
+	width:283px;
+	height:62px;
+	background:url(..img/logo.png) center center no-repeat;
+	background-size:contain;
+	position:absolute;
+	left:50%;
+	/*top:40%;*/
+	margin-left:-400px;
+}
+
+footer
+{
+	width:100%;
+	height:66px;
+	line-height:66px;
+	text-align:center;
+	position:relative;
+	/*bottom:0%;*/
+	border-top: 1px solid #ccc;
+}
+
+.line
+{
+	width:100%;
+	height:1px;
+	background-color:#cacaca;
+	border-bottom:1px solid white;
+}
+
+.copyright
+{
+	color:#8c8c8c;
+}
+
+.password
+{
+	height:100%;
+	float:left;
+}
+
+.input_col input.quick_mobile
+{
+	width:96%;
+}
+
+.normal_mobile
+{
+	width:96%;
+}
+
+.password
+{
+	/* width:96%; */
+}
+
+.error_box
+{
+	width:90%;
+	height:40px;
+	position:absolute;
+	margin-left:10px;
+	color:#d61323;
+	float:left;
+	line-height:40px;
+	background-color:#f6f6f6;
+	cursor:pointer;
+	display:none;
+}
+
+.state
+{
+	width:40px;
+	height:40px;
+	position:relative;
+	float:right;
+	display:none;
+	margin-right:5px;
+}
+
+.state_correct
+{
+	background:url(../img/correct.png) center center no-repeat;
+	background-size:contain;
+	display:block;
+}
+
+.state_error
+{
+	background:url(../imgs/login_form/error.png) center center no-repeat;
+	background-size:contain;
+}
+
+.show_error .error_box,.show_error .state
+{
+	display:block;
+}
+
+.login-item-short{
+	height: 20px;
+	margin-bottom: 12px;
+	margin-top: -12px;
+}
+
+.forget{
+	float: right;
+	margin-right: 50px;
+}
+
+.picture-verif{
+	width: 226px;
+	margin-right: 18px;
+}
+
+.changeBtn{
+	width: auto;
+	height: 40px;
+	display: inline-block;
+	margin-left: 5px;
+	cursor: pointer;
+}

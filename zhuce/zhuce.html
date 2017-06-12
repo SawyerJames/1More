@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://passport.fiil.com/pc/register.jsp -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="http://passport.fiil.com:80/">-->
+    <base href=".">
+    <title>1MORE耳机授权平台</title>
+    <link href="./zhuce_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/base.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/flavr.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/animate.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/common.css" rel="stylesheet" type="text/css">
+    <link href="./zhuce_files/style.css" rel="stylesheet" type="text/css">
+    <script src="./zhuce_files/hm.js"></script>
+    <script>
+    var basePath = "http://passport.fiil.com:80/";
+    </script>
+    <script src="./zhuce_files/jquery-2.1.4.min.js"></script>
+    <script src="./zhuce_files/bootstrap.min.js"></script>
+    <script src="./zhuce_files/flavr.js"></script>
+    <script src="./zhuce_files/flavr-animate.js"></script>
+    <script src="./zhuce_files/alertCall.js"></script>
+    <script src="./zhuce_files/md5.js"></script>
+    <script src="./zhuce_files/unicode.js"></script>
+    <script src="./zhuce_files/inputUtil.js"></script>
+    <script src="./zhuce_files/register.js"></script>
+    <script src="./zhuce_files/validateForm.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="show_img">
+            <div class="logo" style="margin-top: 20%;">
+                <a href="../Shouye/FIIL.html"><img src="img/logo.png"></a>
+            </div>
+        </div>
+        <div class="login_form_col">
+            <div class="login_bar">
+                <div class="login_bar_item">
+                    <span class="login_bar_title">注册</span>
+                </div>
+                <div class="login_bar_item">
+                    <a class="login_bar_url" href="../Login/Login.html">快速登录</a>
+                </div>
+            </div>
+            <div class="login_content">
+                <div class="tab-content">
+                    <div class="tab-pane in active" id="quick">
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                手机号
+                            </div>
+                            <div class="input_col">
+                                <input class="register_mobile" maxlength="11" placeholder="请输入手机号" id="mobile">
+                                <div class="error_box error-register-mobile">
+                                    <span class="error_title error_title_mobile">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_register_mobile"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                图形验证码
+                            </div>
+                            <div class="input_col picture-verif">
+                                <input class="verif_code_1" maxlength="6" id="validatecode" placeholder="请输入验证码">
+                                <div class="error_box error_box_validatecode">
+                                    <span class="error_title error_title_validatecode">---</span>
+                                </div>
+                            </div>
+                            <img src="./zhuce_files/code.jpg">
+                            <div class="changeBtn">
+                                <span>换一张</span>
+                            </div>
+                            <div class="state state_validatecode"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                验证码
+                            </div>
+                            <div class="input_col">
+                                <input class="verif_code" maxlength="4" id="checkcode" placeholder="请输入验证码">
+                                <div class="error_box error_box_verif">
+                                    <span class="error_title error_title_verif">---</span>
+                                </div>
+                                <div class="verif_code_btn">
+                                    <span class="verif_code_text">获取验证码</span>
+                                </div>
+                            </div>
+                            <div class="state state_password"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                密码
+                            </div>
+                            <div class="input_col">
+                                <input class="password" maxlength="30" type="password" placeholder="请输入密码" id="password">
+                                <div class="error_box error_box_password">
+                                    <span class="error_title error_title_password">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_password_normal"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                重复密码
+                            </div>
+                            <div class="input_col">
+                                <input class="password-again" maxlength="30" type="password" placeholder="请再次输入密码" id="password2">
+                                <div class="error_box error_box_password_again">
+                                    <span class="error_title error_title_password_again">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_password_normal_again"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="input_col_name">
+                                邮箱地址
+                            </div>
+                            <div class="input_col">
+                                <input class="email" maxlength="30" placeholder="请输入邮箱" id="email">
+                                <div class="error_box error_box_email">
+                                    <span class="error_title error_title_email">---</span>
+                                </div>
+                            </div>
+                            <div class="state state_email"></div>
+                        </div>
+                        <div class="login_item">
+                            <div class="third_login_title"></div>
+                            <div class="third_login_col">
+                                <input type="checkbox" checked="" id="rules">
+                                <span>我已阅读并遵守</span>
+                                <a href="#">《1more耳机服务协议》</a>
+                            </div>
+                            <div class="login-btn-col">
+                                <div class="login-btn login_register" onclick="register()">注册</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="line"></div>
+        <span class="copyright">Copyright © 2015-4-25</span>
+    </footer>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?158fda3b98b6184e70d1b35007b35f07";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</body>
+
+</html>

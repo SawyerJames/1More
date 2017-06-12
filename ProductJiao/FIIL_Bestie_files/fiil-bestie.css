@@ -1,0 +1,180 @@
+.swipe-item .swipe-content .width-limit{
+    height: 100%;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swipe-item:nth-of-type(odd) {
+    background: url("//source-img.fiil.com/portal/pc/images/product/prd-back.jpg") no-repeat;
+    background-size: cover;
+}
+
+.swipe-item.bestie .swipe-content .width-limit{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/bestie-prd.png") right bottom / auto 85% no-repeat;
+}
+
+.swipe-item.bestie-os .swipe-content{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/os-prd.png") right 60px / 37% no-repeat;
+}
+
+.swipe-item.bestie-live .swipe-content {
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/live-prd.png") center bottom / auto 55% no-repeat;
+}
+
+.swipe-item.bestie-soft .swipe-content .width-limit{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/soft-prd.png") 14% bottom / auto 80% no-repeat;
+}
+
+.swipe-item.bestie-soft .swipe-content .width-limit .prd-desc{
+    width: initial;
+}
+
+.swipe-item.bestie-noodle .swipe-content {
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/noodle-prd.png") center bottom / auto 55% no-repeat;
+}
+
+.swipe-item.bestie-colorful .swipe-content{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/colorful-prd.png") 116% center / auto 75% no-repeat;
+}
+
+.swipe-item.bestie-easy .swipe-content{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/easy-prd.png") left top / auto 100% no-repeat;
+}
+
+.swipe-item.bestie-eq .swipe-content .right{
+    width: 47%;
+}
+
+.swipe-item.bestie-eq .swipe-content .width-limit{
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/eq-prd.png") left bottom / auto 70% no-repeat;
+}
+
+.swipe-item .swipe-content .bottom-desc {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.swipe-item .swipe-content .img-cover {
+    width: 50%;
+    height: 100%;
+    padding-top: 60px;
+    float: right;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.swipe-item.bestie .swipe-content .prd-desc {
+    left: 1%;
+    text-align: left;
+}
+
+.swipe-item.bestie-noodle .swipe-content .prd-desc {
+    margin-left: 14%;
+}
+
+.swipe-item.bestie-srv .swipe-content .prd-desc {
+    width: 100%;
+    padding-right: 130px;
+}
+
+.swipe-item .swipe-content .line1 {
+    color: #df0329;
+}
+
+.swipe-item.bestie .swipe-content .line1 {
+    font-size: 60px;
+    color: #2d2d2d;
+}
+
+.swipe-item.bestie-srv .swipe-content .line1 {
+    color: #5a5a5a;
+}
+
+.swipe-item .swipe-content .line2 {
+    color: #323232;
+}
+
+.swipe-item.bestie .swipe-content .line2 {
+    color: #5a5a5a;
+    font-size: 16px;
+    margin-top: 42px;
+}
+
+.swipe-item .swipe-content .line3 {
+    margin-top: 70px;
+}
+
+.swipe-item .swipe-content .line4 {
+    color: #323232;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.swipe-item.bestie .swipe-content .line3{
+    color: #F7323F;
+}
+
+.swipe-item.bestie-live .swipe-content .line3 {
+    margin: 26px auto 0;
+}
+.swipe-item.prd-wrap .swipe-content .prd-desc{
+
+}
+.swipe-item.prd-wrap .swipe-content .img-cover .prd-img{
+    height: 100%;
+}
+.swipe-item.prd-wrap .swipe-content .img-cover .prd-img:nth-of-type(1){
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/red.png") center / auto 60% no-repeat;
+}
+.swipe-item.prd-wrap .swipe-content .img-cover .prd-img:nth-of-type(2){
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/black.png") center / auto 60% no-repeat;
+}
+.swipe-item.prd-wrap .swipe-content .img-cover .prd-img:nth-of-type(3){
+    background: url("//source-img.fiil.com/portal/pc/images/product/bestie/silver.png") center / auto 60% no-repeat;
+}
+
+.swipe-item.prd-wrap .swipe-content .prd-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.swipe-item.prd-wrap .swipe-content .prd-img.active {
+    opacity: 1;
+}
+
+.swipe-item.prd-wrap .swipe-content .prd-shadow {
+    left: 0;
+    bottom: 20px;
+    position: absolute;
+}
+
+.swipe-item.prd-wrap .swipe-content .prd-desc {
+    width: auto;
+    margin-left: 200px;
+}
+
+
+.color-panel i:nth-child(1) {
+    background: #FC5C5C;
+}
+
+.color-panel i:nth-child(2) {
+    background: #101010;
+}
+
+.color-panel i:nth-child(3) {
+    background: #A5A5A5;
+}
+
+.swipe-content .prd-desc .go-buy {
+    margin: 40px 0 15px;
+}

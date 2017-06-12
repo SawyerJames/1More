@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1more三单元耳机介绍页</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+ <link href="./FIIL_Carat_files/animate.css" rel="stylesheet" type="text/css">
+    <link href="./FIIL_Carat_files/base.css" rel="stylesheet" type="text/css">
+    <link href="./FIIL_Carat_files/product.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./FIIL_Carat_files/jquery.js"></script>
+    <script src="./FIIL_Carat_files/pro.nav.active.js"></script>
+    <script src="./FIIL_Carat_files/sub.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <style type="text/css">
+        .content-wrap {height: initial;}
+        .content-wrap .wrapper { padding-top: 140px; }
+        .content-wrap .wrapper img { width: 100%; display: block; }
+    </style>
+<!--[if IE]>
+<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+<script src="./FIIL_Carat_files/hm.js"></script><script>
+	function trimStr(str){
+		return str.replace(/(^\s*)|(\s*$)/g,"");
+	}
+
+	function lanSkip(){
+		var url = window.location.href;
+		if(url.indexOf("/cn/") > -1){
+			setCookie("lang","zh",30);
+		}
+		else if(url.indexOf("/en/") > -1){
+			setCookie("lang","en",30);
+		}
+	}
+
+	function setCookie(name,value,exp){
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()+exp);
+		document.cookie = name + "=" + escape(value)  + ((exp == null||exp == "")? ";" : ";expires=" + expDate.toUTCString()) + ";path=/";
+	}
+
+	function getCookie(name){
+		var cookieStr = "";
+		cookieStr = document.cookie;
+
+		var nameExsist = true;
+		if(cookieStr.length > 0){
+			var cookieArr = new Array();
+			cookieArr = cookieStr.split(";");
+			for(var i = 0; i<cookieArr.length; i++){
+				var cookieArrItem = new Array();
+				cookieArrItem = cookieArr[i].split("=");
+				if(trimStr(cookieArrItem[0]) == name){
+					return unescape(trimStr(cookieArrItem[1]));
+					break;
+				}
+				else{
+					nameExsist = false;
+				}
+			}
+			if(!nameExsist){
+				return "";
+			}
+		}
+		else{
+			return "";
+		}
+	}
+
+	function delCookie(name) {
+		var expDate = new Date();
+		expDate.setDate(expDate.getDate()-1);
+		var cval = getCookie("lang");
+		if(cval != null){
+			document.cookie = name + "=" + escape(cval) + ";expires=" + expDate.toUTCString() + ";path=/";
+		}
+	}
+	
+	(function(){
+		lanSkip();
+	})();
+</script>
+</head>
+<body>
+<nav class="j-nav-bar" position: fixed;top: 0px;>
+    <div class="nav-back animated7 no-shadow"></div>
+    <dl>
+        <dd><a href=“../shouye/FIIL.html><i class="logo"><img src="../picture/fiil-logo-black.png" style="margin-top:15px;"></i></a></dd>
+                <dd><a data-nav="index" href="../Shouye/FIIL.html" class="active">首页</a></dd>
+        <dd class="hover-sub-pro"><a data-nav="product" class="active">产品</a>
+            <div class="fiil-head-sub-col" data-sub="sub-pro" style="display: none;">
+                <div class="">
+                    <div class="head-sub-item">
+                            <a class="sub-url" href="../ProductWireless/fiil系列.html">
+                            <div class="sub-img sub-img-pro1"><img src="../picture/sub-pro-fiil.png"></div>
+                            <div class="sub-title">wireless</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductJiao/FIIL_Bestie.html">
+                            <div class="sub-img sub-img-pro2"><img src="../picture/sub-pro-bestie.png"></div>
+                            <div class="sub-title">胶囊耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                         <a class="sub-url" href="../ProductQuan/FIIL_Diva.html">
+                            <div class="sub-img  sub-img-pro3"><img src="../picture/sub-pro-diva.png"></div>
+                            <div class="sub-title">圈铁耳机</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductThree/FIIL_Carat.html">
+                            <div class="sub-img  sub-img-pro4"><img src="../picture/sub-pro-carat.png"></div>
+                            <div class="sub-title">三单元</div>
+                        </a>
+                    </div>
+                    <div class="head-sub-item">
+                        <a class="sub-url" href="../ProductShan/FIIL_Vox.html">
+                            <div class="sub-img  sub-img-pro5"><img src="../picture/sub-pro-vox.png"></div>
+                            <div class="sub-title">山灵X1MORE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </dd>
+          <dd><a href="../PPXX/index.html" target="_blank">品牌信息</a></dd>
+        <!--<dd><a data-nav="diva" href="diva.php">FIIL_Diva</a></dd>-->
+        <!--<dd><a data-nav="bestie" href="fiil-bestie.php">FIIL_Bestie</a></dd>-->
+        <dd class="nav-service hover-sub-ser"><a data-nav="service">服务</a>
+            <div class="fiil-head-sub-col" data-sub="sub-ser">
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../1moreDownload/fillDownload.html">
+                        <div class="sub-img1 sub-img-ser1">
+                            <img src="../picture/sub-service-fiilplus.png">
+                        </div>
+                        <div class="sub-title">下载1more+</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../xianxiadian/xianxiadian.html">
+                        <div class="sub-img1 sub-img-ser2"><img src="../picture/sub-service-offiline.png"></div>
+                        <div class="sub-title">线下门店</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Regist/Regist.html">
+                        <div class="sub-img1  sub-img-ser3"><img src="../picture/sub-service-guarantee.png"></div>
+                        <div class="sub-title">产品注册</div>
+                    </a>
+                </div>
+                <div class="head-sub-item">
+                    <a class="sub-url" href="../Authentication/Authentication.html">
+                        <div class="sub-img1  sub-img-ser4"><img src="../picture/sub-service-validate.png"></div>
+                        <div class="sub-title">正品验证</div>
+                    </a>
+                </div>
+            </div>
+        </dd>
+      
+        <dd><a href="../AboutUs/AboutUs.html" target="_blank">和我联系</a></dd>
+        <dd class="language"><span><a data-lan="cn" class="active" href="../Login/Login.html">登录</a> <i>|</i> <a data-lan="en" href="../zhuce/zhuce.html"> 注册 </a></span></dd>
+    </dl>
+</nav>
+	<div class="main" style="margin-top: 80px;">
+	  <div class="sidebar-hover">
+	    <p class="pagination">
+	      <span class="page">01</span> / <span class="total-pages">08</span>
+	    </p>
+	  </div>
+	  <div class="sidebar-real">
+	    <div data-page="1" class="nav-elem nav-1 active"></div>
+	    <div data-page="2" class="nav-elem nav-2"></div>
+	    <div data-page="3" class="nav-elem nav-3"></div>
+	    <div data-page="4" class="nav-elem nav-4"></div>
+	    <div data-page="5" class="nav-elem nav-5"></div>
+	    <div data-page="6" class="nav-elem nav-6"></div>
+	    <div data-page="7" class="nav-elem nav-7"></div>
+	    <div data-page="8" class="nav-elem nav-8"></div>
+	      <div data-page="9" class="nav-elem nav-9"></div>
+	        <div data-page="10" class="nav-elem nav-10"></div>
+	          <div data-page="11" class="nav-elem nav-11"></div>
+	            <div data-page="12" class="nav-elem nav-12"></div>
+	  </div>
+	  <div class="sections">
+	    <div class="section section-1">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       </div>
+	    </div>
+	    <div class="section section-2">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	          </div>
+	    </div>
+	    <div class="section section-3">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        </div>
+	    </div>
+	    <div class="section section-4">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	    <div class="section section-5">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	    <div class="section section-6">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+      </div>
+	    </div>
+	    <div class="section section-7">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	    <div class="section section-8">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	   <div class="section section-9">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	   <div class="section section-10">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	 <div class="section section-11">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	  <div class="section section-12">
+	      <div class="left-part"></div>
+	      <div class="content">
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	       	<div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	        <div class="bg-part"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <h2 class="scroll-down">Scroll down</h2>
+	</div>
+<script type="text/javascript" src='js/stopExecutionOnTimeout.js'></script>
+<script type="text/javascript" src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/main.js"></script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+<footer>
+    <div class="footer-wrap" >
+        <div class="footer-row footer-top">
+            <p class="f-l"><img src="./FIIL_Carat_files/fiil-me-now_white.png"></p>
+
+            <div class="f-r sns-share">
+                <a class="animated7" target="_blank" href="http://weibo.com/u/5604999844?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1"><img src="../picture/浅色图标2.png"></a>
+                <a class="animated7" target="_blank" href="http://bbs.fiil.com/"><img src="../picture/白色图标1.png"></a>
+                <a class="animated7" target="_blank" href="http://tieba.baidu.com/f?kw=fiil&amp;ie=utf-8"><img src="../picture/浅色图标3.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript">
+    var __isEn = location.href.indexOf('/en') > -1;
+    $(document).ready(function () {
+        var url = location.href;
+        $('[data-lan="' + (__isEn ? "en" : "cn") + '"]').addClass('active');
+        $('[data-lan]').on('click', function () {
+            var lan = $(this).attr('data-lan');
+            if (lan === 'en' && !__isEn) {
+                setCookie("lang","en",30);
+				var lan_url = location.href;
+				lan_url = lan_url.replace("/cn/","/en/");
+                window.location.href = lan_url;
+//                alert(getCookie("lang"));
+            } else if (lan === 'cn' && __isEn) {
+                setCookie("lang","zh",30);
+                var lan_url = location.href;
+				lan_url = lan_url.replace("/en/","/cn/");
+                window.location.href = lan_url;
+            }
+        })
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b930a0af17fc24859e92e702b1e3265a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script><script>
+	var scrollBool = true;
+   (function (win) {
+	   	
+        $('.j-nav-bar .nav-back').addClass('no-shadow');
+        $('[data-nav="fiil"]').addClass('active');
+        var footer = $('footer');
+		var wrapper = $('.wrapper');
+        var autoHideNavBar = function () {
+			var winHeight = win.height();
+            var container = $('body');
+            var
+			if(winHeight < 750)
+			{
+				if(container.scrollTop()<=550)
+				{
+					$('.j-nav-bar').removeClass("head_up_hide");
+					$('.product-nav').removeClass("head_up_hide1");
+					wrapper.removeClass("head_up_hide2");
+				}
+				else if(container.scrollTop()>550)
+				{
+					$('.j-nav-bar').addClass("head_up_hide");
+					$('.product-nav').addClass("head_up_hide1");
+					wrapper.addClass("head_up_hide2");
+				}
+			}
+			else
+			{
+				$('.j-nav-bar').removeClass("head_up_hide");
+				$('.product-nav').removeClass("head_up_hide1");
+				wrapper.removeClass("head_up_hide2");
+			}
+        };
+		
+		$(document).ready(function(e) {
+            autoHideNavBar();
+        });
+		
+		$(document).scroll(function(e) {
+			autoHideNavBar();
+		});
+		
+		$(window).resize(function(){
+			autoHideNavBar();
+		});
+    })($(window));
+	
+</script>
+</html>
